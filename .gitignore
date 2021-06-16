@@ -1,0 +1,5 @@
+.idea
+venv
+*.jpg
+*.pyc
+src/private_settings.py

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>My_notes</title>
+{% endblock title %}
+
+{% block content %}
+    <h1>{{my_title|capfirst|title}}</h1>
+    <p>
+        <h1>{{info}}</h1>
+    </p>
+    <ul>
+        <li>Item -1</li>
+        <li>Item 0</li>
+    </ul>
+    <ul>
+        {% for i in list %}
+            {% if i == 22 %}
+                <li>{{ forloop.counter }} Item value: {{i|add:22}}</li>
+            {% elif i == 55 %}
+                <li>{{ forloop.counter }} Item value: {{i|add:-1}}</li>
+            {% else %}
+                <li>{{ forloop.counter }} Item value: {{i}}</li>
+            {% endif %}
+
+        {% endfor %}
+    </ul>
+{% endblock content %}
