@@ -47,7 +47,7 @@ Contienen bloques que se "reemplazan" en el archivo *src/templates/base.html* pe
 ### ARCHIVOS PYTHON
 **Aquellos archivos que no se encuentren comentariados son propios de Django.**  
 Se recomienda no modificar los nombres de las funciones, variables y clases ya que pueden corresponder a Django, a su vez,
-se recomienda no eliminar archivos a pesar de que se encuentren vacios.  
+se recomienda no eliminar archivos a pesar de que se encuentren vacíos.  
 Al realizar actualizaciones en la archivos *models.py* ejecutar los siguientes comandos con el fin de realizar las  respectivas modificaciones en la base de datos:
 ```
 python manage.py makemigrations
