@@ -10,7 +10,7 @@ Para iniciar Django use el siguiente comando en la carpeta src:
 ```
 python manage.py runserver
 ```
-Ingrese a la página *DireccionProporcionadaPorDjango **/admin/** * **(e.g. http://127.0.0.1:8000/admin/)** e ingrese el usuario y contraseña **(si no se encuentra iniciada la sesión)** ubicados en el archivo private_settings.py  
+Ingrese a la página *DireccionProporcionadaPorDjango **/admin/*** (e.g. http://127.0.0.1:8000/admin/) e ingrese el usuario y contraseña **(si no se encuentra iniciada la sesión)** ubicados en el archivo private_settings.py  
 Una vez haya iniciado sesión puede comenzar a usar la aplicación normalmente.
 ### URLS
 El archivo contiene la siguientes direcciones URL:
