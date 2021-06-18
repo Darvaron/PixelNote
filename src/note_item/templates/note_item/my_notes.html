@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    <title>My_notes</title>
+
+{% endblock title %}
+
+{% block content %}
+
+    <h1>Notas:</h1>
+    <!--Recibe la lista de note_item que existen en la base de datos y la genera-->
+    {% for item in object_list %}
+        <p>{{item.id}} - <a href="{{item.get_absolute_url}}">{{item.title}}</a></p>
+    {% endfor %}
+
+{% endblock content %}
+

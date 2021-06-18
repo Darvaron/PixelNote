@@ -1,11 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>In app</h1>
-    <h1>Título: {{object.title}}</h1>
-    <h1>Descripción: {% if object.description != None %}{{object.description}}{% else %}No se añadió una descripción para la nota.{% endif %}</h1>
-    <h1>Resumen: {% if object.summary != None %}{{object.summary}}{% else %}No se añadió un resumen para la nota.{% endif %}</h1>
-    <h1>Creado: {{object.created.date}} a las: {{object.created.time}}</h1>
-    <h1>Modificado por ultima vez: {{object.modified.date}} a las: {{object.modified.time}}</h1>
+
+    <h1>Detalles:</h1>
+
+    <!--Genera los detalles de los note_item, contiene condicionales por si dichos campos fueron nulos-->
+    <h2>Título:
+        {{object.title}}
+    </h2>
+    <h2>Descripción:
+        {% if object.description != None %}
+        {{object.description}}
+        {% else %}
+        No se añadió una descripción para la nota.
+        {% endif %}
+    </h2>
+    <h2>Resumen:
+        {% if object.summary != None %}
+        {{object.summary}}
+        {% else %}
+        No se añadió un resumen para la nota.
+        {% endif %}
+    </h2>
+    <h2>Creado: {{object.created.date}} a las: {{object.created.time}}</h2>
+    <h2>Modificado por última vez: {{object.modified.date}} a las: {{object.modified.time}}</h2>
 
 {% endblock content %}

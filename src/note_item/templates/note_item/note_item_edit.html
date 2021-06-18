@@ -2,8 +2,8 @@
 
 {% block content %}
 
+    <h1>Editando: {{object.title}}</h1>
     <form action="." method="POST">{% csrf_token %}
-        <!--Genera el formulario por medio de una función de django-->
         {{ form.as_p }}
        <input type="submit" value="Save"/>
     </form>
